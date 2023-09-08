@@ -1,36 +1,37 @@
 # this is only for search engines, it does not appear in the home
 # as long as the json variables name and description are provided
-title: Hacked Jekyll
-description: Jekyll microtheme that looks like JSON
-baseurl: ""
-url: https://hacked-jekyll.netlify.app
+# title: TIM VO
+# description: Jekyll microtheme that looks like JSON
+# baseurl: ""
+# url: https://hacked-jekyll.netlify.app
 
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: Place Holder
+  name: TIM VO
   description:
-    - Hello!
-    - This tiny website
-    - Looks like json
-  cv: assets/cv.pdf
+    - Hi there!
+    - I am a structural technician, a newbie in a BIM-based world.
+    - I work for WSP, Australia.
+    - Here, is another side of me - a geek with IT stuff ^-^ ./.
+  cv: assets/T.B.C
   address:
-    - University of Jekyll
-    - Department of Themes
-    - 123 Main St, Anytown, USA
+    - Strathfield South
+    - Sydney, NSW 
+    - Australia
   contact:
-    office: Foobar Hall 1.23
-    phone: +1 234 567 890
-    email: username@domain.com
-  demo: https://hacked-jekyll.netlify.app
-  source: https://github.com/piazzai/hacked-jekyll
+    # office: Foobar Hall 1.23
+    phone: +61 466 508 568
+    email: timvo.aus@gmail.com
+  # demo: https://hacked-jekyll.netlify.app
+  # source: https://github.com/piazzai/hacked-jekyll
   profiles:
-    facebook: https://www.facebook.com
-    twitter: https://twitter.com
-    instagram: https://www.instagram.com
-    linkedin: https://www.linkedin.com
-    stackoverflow: https://stackoverflow.com
-    github: https://github.com
+    facebook: https://www.facebook.com/tim.nhut.vo/
+    # twitter: https://twitter.com
+    instagram: https://www.instagram.com/tim.nhut.vo/
+    linkedin: https://www.linkedin.com/in/nhutvtm/
+    # stackoverflow: https://stackoverflow.com
+    github: https://github.com/timmyvo/
 
 exclude:
   - LICENSE
