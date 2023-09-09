@@ -8,7 +8,7 @@ body {
 
 main {
   position: absolute;
-  width: 90%;
+  width: 95%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -26,7 +26,7 @@ main {
   
     /* Responsive block styles */
   .responsive-block {
-    width: 100%;
+    width: 95%;
     white-space: normal; /* Allow text to wrap to new lines */
   }
 
