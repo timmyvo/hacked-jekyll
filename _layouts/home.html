@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main class="json">
-  <div class="block">
+<!--   <div class="block">
     {% if site.json.name %}
     <p><span class="key">name</span><span class="attr">{{ site.json.name }}</span></p>
     {% else %}
@@ -17,6 +17,27 @@ layout: default
       {% endfor %}
     </div>
     <p><span class="key">description</span>{% include typed.html %}</p>
+    {% else %}
+    <p><span class="key">description</span><span class="attr">{{ site.json.description }}</span></p>
+    {% endif %}
+    {% else %}
+    <p><span class="key">description</span><span class="attr">{{ site.description }}</span></p>
+    {% endif %}
+  </div> -->
+  <div class="block">
+    {% if site.json.name %}
+    <p><span class="key">name</span><span class="attr">{{ site.json.name }}</span></p>
+    {% else %}
+    <p><span class="key">name</span><span class="attr">{{ site.title }}</span></p>
+    {% endif %}
+    {% if site.json.description %}
+    {% if site.json.description.first %}
+    <div id="typed-strings">
+      {% for i in site.json.description %}
+      <span>{{ i | prepend: '"' | append: '",'}}</span>
+      {% endfor %}
+    </div>
+    <p><span class="key">description</span><span class="attr"><span id="typed-container"><span id="typed"></span></span></span></p>
     {% else %}
     <p><span class="key">description</span><span class="attr">{{ site.json.description }}</span></p>
     {% endif %}
