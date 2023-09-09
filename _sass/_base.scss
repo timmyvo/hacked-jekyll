@@ -14,15 +14,15 @@ main {
   transform: translate(-50%, -50%);
   // text-transform: lowercase;
 
-  // @media (min-width: 576px) {
-  //   font-size: 18px;
-  //   width: 80%;
-  // }
+  @media (min-width: 576px) {
+    font-size: 18px;
+    width: 80%;
+  }
 
-  // @media (min-width: 768px) {
-  //   font-size: 20px;
-  //   width: 60%
-  // }
+  @media (min-width: 768px) {
+    font-size: 20px;
+    width: 60%
+  }
   
     /* Responsive block styles */
   .responsive-block {
