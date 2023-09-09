@@ -12,8 +12,8 @@ json:
   description:
     - Hi there!
     - I am a structural technician, a newbie in a BIM-based world.
-    - Here, is another side of me - a geek with IT stuff ^-^ ./.
-  cv: assets/toBeUpdate
+    - Here, is another side of me - a geek with IT stuff (^-^)
+  resume: assets/toBeUpdate
   address:
     - Strathfield South
     - Sydney, NSW 
