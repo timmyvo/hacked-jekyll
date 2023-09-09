@@ -20,8 +20,13 @@ main {
   }
 
   @media (min-width: 768px) {
-    font-size: 20px;
-    width: 60%
+    #typed-strings {
+      /* Adjust styling for small screens */
+      white-space: normal; /* Allow line breaks on small screens */
+      /* You can set other properties as needed */
+      font-size: 20px;
+      width: 60%
+    } 
   }
 }
 
