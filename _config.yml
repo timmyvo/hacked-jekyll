@@ -31,6 +31,8 @@ json:
     linkedin: https://www.linkedin.com/in/nhutvtm/
     # stackoverflow: https://stackoverflow.com
     github: https://github.com/timmyvo/
+  quote:
+    - Be grateful for present
 
 exclude:
   - LICENSE
