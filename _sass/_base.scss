@@ -14,29 +14,33 @@ main {
   transform: translate(-50%, -50%);
   // text-transform: lowercase;
 
-  @media (min-width: 576px) {
-    font-size: 18px;
-    width: 80%;
-  }
+  // @media (min-width: 576px) {
+  //   font-size: 18px;
+  //   width: 80%;
+  // }
 
-  @media (min-width: 768px) {
-    font-size: 20px;
-    width: 60%
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 20px;
+  //   width: 60%
+  // }
+  
     /* Responsive block styles */
   .responsive-block {
     width: 100%;
+    white-space: normal; /* Allow text to wrap to new lines */
+  }
+
+  @media (min-width: 576px) {
+    .responsive-block {
+      font-size: 18px;
+      width: 80%; /* You can adjust the width as needed */
+    }
   }
 
   @media (min-width: 768px) {
     .responsive-block {
-      width: 50%; /* You can adjust the width as needed */
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .responsive-block {
-      width: 30%; /* You can adjust the width as needed */
+      font-size: 20px;
+      width: 60%; /* You can adjust the width as needed */
     }
   }
 }
