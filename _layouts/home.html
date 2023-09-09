@@ -106,8 +106,9 @@ layout: default
       {% for i in site.json.profiles %}
       <p class="array-attr"><a href="{{ i | slice: 1 }}" target="_blank">{{ i | slice: 0 }}</a></p>
       {% endfor %}
+    </div>
+    {% endif %}
   </div>
-
   <div class="block">
     {% if site.json.quote %}
     {% if site.json.quote.first %}
@@ -120,9 +121,6 @@ layout: default
     {% else %}
     <p><span class="key">quote</span><span class="attr">{{ site.json.quote }}</span></p>
     {% endif %}
-    {% endif %}
-  </div>
-      
     {% endif %}
   </div>
 </main>
