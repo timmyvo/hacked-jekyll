@@ -4,27 +4,6 @@
 
   <title>{{ site.title }}</title>
 
-  <style>
-    /* CSS for larger screens (default styles) */
-    #typed {
-      /* Your default styling for larger screens */
-      display: inline-block; /* Ensure it doesn't take the full width */
-    }
-
-    /* CSS for screens with a maximum width of 768px (mobile layout) */
-    @media (max-width: 768px) {
-      #typed {
-        /* Adjust styling for mobile layout */
-        display: block; /* Make it a block element to auto-wrap text */
-        width: 100%; /* Full width on mobile */
-        word-wrap: break-word; /* Ensure text wraps within available width */
-        /* You can set other properties as needed */
-      }
-
-      /* Add more responsive styles as needed */
-    }
-  </style>
-
   {% seo title=false %}
 
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
