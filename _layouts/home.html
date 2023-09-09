@@ -47,12 +47,20 @@ layout: default
     {% endif %}
   </div>
   
-  <div class="block">
+<!--   <div class="block">
     {% if site.json.cv %}
     {% assign cv = site.json.cv | split: "/" | slice: -1 %}
     <p><span class="key">cv</span><span class="attr"><a href="{{ site.json.cv }}" target="_blank">{{ cv }}</a></span></p>
     {% endif %}
+  </div> -->
+
+  <div class="block">
+    {% if site.json.resume %} <!-- Updated the condition to check for "resume" -->
+    {% assign resume = site.json.resume | split: "/" | slice: -1 %} <!-- Updated the variable name to "resume" -->
+    <p><span class="key">resume</span><span class="attr"><a href="{{ site.json.resume }}" target="_blank">{{ resume }}</a></span></p>
+    {% endif %}
   </div>
+    
   <div class="block">
     {% if site.json.address %}
     {% if site.json.address.first %}
