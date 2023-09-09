@@ -19,7 +19,7 @@ main {
     width: 80%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1080px) {
     font-size: 20px;
     width: 60%
   }
@@ -37,7 +37,7 @@ main {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1080px) {
     .responsive-block {
       font-size: 20px;
       width: 60%; /* You can adjust the width as needed */
