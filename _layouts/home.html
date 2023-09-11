@@ -109,7 +109,7 @@ layout: default
     </div>
     {% endif %}
   </div>
-  <div class="block">
+  <div class="block {% if site.json.quote %}responsive-block{% endif %}">
     {% if site.json.quote %}
     {% if site.json.quote.first %}
     <p><span class="array-key">quote</span></p>
