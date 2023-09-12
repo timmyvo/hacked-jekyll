@@ -14,6 +14,43 @@ main {
   transform: translate(-50%, -50%);
   // text-transform: lowercase;
 
+    /* Styles for dark mode */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--dark-background-color);
+      color: var(--dark-text-color);
+    }
+  
+    a {
+      color: inherit;
+      font-style: italic;
+  
+      &:hover,
+      &:active {
+        color: var(--dark-link-color);
+      }
+    }
+  }
+  
+  /* Styles for light mode */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: var(--light-background-color);
+      color: var(--light-text-color);
+    }
+  
+    a {
+      color: inherit;
+      font-style: italic;
+  
+      &:hover,
+      &:active {
+        color: var(--light-link-color);
+      }
+    }
+  }
+
+  
   @media (min-width: 576px) {
     font-size: 18px;
     width: 80%;
