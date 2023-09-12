@@ -67,7 +67,7 @@ body {
   font-weight: 400;
   
   margin: 0; /* Remove default body margin */
-  min-height: 100%; /* Ensure the body takes up at least the full viewport height */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
   display: flex; /* Enable flex layout for vertical centering */
   flex-direction: column; /* Stack children vertically */
 }
@@ -81,7 +81,7 @@ main {
   flex: 1; /* Allow main to grow and take up remaining space */
   width: 95%;
   margin: auto; /* Center main horizontally */
-  margin-top: 20%; /* Set margin from the top to 20% of viewport height */
+  margin-top: 20vh; /* Set margin from the top to 20% of viewport height */
 }
 
 /* Styles for dark mode */
