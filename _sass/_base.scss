@@ -1,9 +1,70 @@
+// body {
+//   font-family: "hack", monospace;
+//   font-size: 16px;
+//   font-weight: 400;
+//   // background-color: var(--oc-gray-9);
+//   // color: var(--oc-white);
+// }
+
+// main {
+//   position: absolute;
+//   width: 95%;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   // text-transform: lowercase;
+ 
+//   @media (min-width: 576px) {
+//     font-size: 18px;
+//     width: 80%;
+//   }
+
+//   @media (min-width: 1080px) {
+//     font-size: 20px;
+//     width: 60%
+//   }
+  
+//     /* Responsive block styles */
+//   .responsive-block {
+//     width: 95%;
+//     white-space: normal; /* Allow text to wrap to new lines */
+//   }
+
+//   @media (min-width: 576px) {
+//     .responsive-block {
+//       font-size: 18px;
+//       width: 80%; /* You can adjust the width as needed */
+//     }
+//   }
+
+//   @media (min-width: 1080px) {
+//     .responsive-block {
+//       font-size: 20px;
+//       width: 80%; /* You can adjust the width as needed */
+//     }
+//   }
+// }
+
+// p {
+//   margin: 0;
+// }
+
+// a {
+//   color: inherit;
+//   font-style: italic;
+
+//   &:hover,
+//   &:active {
+//     color: var(--oc-red-9);
+//   }
+// }
+
+
+/* Default styles for both dark and light modes */
 body {
   font-family: "hack", monospace;
   font-size: 16px;
   font-weight: 400;
-  // background-color: var(--oc-gray-9);
-  // color: var(--oc-white);
 }
 
 main {
@@ -12,86 +73,80 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // text-transform: lowercase;
+}
 
-    /* Styles for dark mode */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--dark-background-color);
-      color: var(--dark-text-color);
-    }
-  
-    a {
-      color: inherit;
-      font-style: italic;
-  
-      &:hover,
-      &:active {
-        color: var(--dark-link-color);
-      }
-    }
-  }
-  
-  /* Styles for light mode */
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: var(--light-background-color);
-      color: var(--light-text-color);
-    }
-  
-    a {
-      color: inherit;
-      font-style: italic;
-  
-      &:hover,
-      &:active {
-        color: var(--light-link-color);
-      }
-    }
+/* Styles for dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black; /* Dark mode background color */
+    color: white; /* Dark mode text color */
   }
 
-  
-  @media (min-width: 576px) {
+  a {
+    color: inherit;
+    font-style: italic;
+
+    &:hover,
+    &:active {
+      color: red; /* Dark mode link color */
+    }
+  }
+}
+
+/* Styles for light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white; /* Light mode background color */
+    color: black; /* Light mode text color */
+  }
+
+  a {
+    color: inherit;
+    font-style: italic;
+
+    &:hover,
+    &:active {
+      color: blue; /* Light mode link color */
+    }
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 576px) {
+  body {
+    font-size: 18px;
+  }
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    font-size: 20px;
+  }
+  main {
+    width: 60%;
+  }
+}
+
+/* Responsive block styles */
+.responsive-block {
+  width: 95%;
+  white-space: normal; /* Allow text to wrap to new lines */
+}
+
+@media (min-width: 576px) {
+  .responsive-block {
     font-size: 18px;
     width: 80%;
   }
+}
 
-  @media (min-width: 1080px) {
-    font-size: 20px;
-    width: 60%
-  }
-  
-    /* Responsive block styles */
+@media (min-width: 1080px) {
   .responsive-block {
-    width: 95%;
-    white-space: normal; /* Allow text to wrap to new lines */
-  }
-
-  @media (min-width: 576px) {
-    .responsive-block {
-      font-size: 18px;
-      width: 80%; /* You can adjust the width as needed */
-    }
-  }
-
-  @media (min-width: 1080px) {
-    .responsive-block {
-      font-size: 20px;
-      width: 80%; /* You can adjust the width as needed */
-    }
+    font-size: 20px;
+    width: 80%;
   }
 }
 
-p {
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  font-style: italic;
-
-  &:hover,
-  &:active {
-    color: var(--oc-red-9);
-  }
-}
