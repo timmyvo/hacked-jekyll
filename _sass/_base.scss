@@ -65,14 +65,22 @@ body {
   font-family: "hack", monospace;
   font-size: 16px;
   font-weight: 400;
+  
+  margin: 0; /* Remove default body margin */
+  min-height: 100%; /* Ensure the body takes up at least the full viewport height */
+  display: flex; /* Enable flex layout for vertical centering */
+  flex-direction: column; /* Stack children vertically */
 }
 
 main {
-  position: absolute;
+  // position: absolute;
+  // width: 95%;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  flex: 1; /* Allow main to grow and take up remaining space */
   width: 95%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto; /* Center main horizontally */
 }
 
 /* Styles for dark mode */
