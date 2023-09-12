@@ -81,7 +81,11 @@ main {
     background-color: black; /* Dark mode background color */
     color: white; /* Dark mode text color */
   }
-
+ 
+  p {
+   margin: 0;
+  }
+ 
   a {
     color: inherit;
     font-style: italic;
@@ -100,6 +104,10 @@ main {
     color: black; /* Light mode text color */
   }
 
+  p {
+   margin: 0;
+  }
+ 
   a {
     color: inherit;
     font-style: italic;
