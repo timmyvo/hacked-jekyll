@@ -21,12 +21,12 @@ json:
     - Australia
   contact:
     # office: Foobar Hall 1.23
-    whatsapp: +61 466 508 568
+    # whatsapp: +61 466 508 568
     email: email@timvo.net
   # demo: https://hacked-jekyll.netlify.app
   # source: https://github.com/piazzai/hacked-jekyll
   profiles:
-    facebook: https://www.facebook.com/tim.nhut.vo/
+    # facebook: https://www.facebook.com/tim.nhut.vo/
     # twitter: https://twitter.com
     instagram: https://www.instagram.com/tim.nhut.vo/
     linkedin: https://www.linkedin.com/in/timnhutvo/
