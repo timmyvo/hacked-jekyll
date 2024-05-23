@@ -16,22 +16,16 @@ json:
     - Here, is another side of me - a geek with IT stuff (^-^)
   resume: assets/toBeUpdate
   address:
-    # - Strathfield South
     - Sydney, NSW 
     - Australia
   contact:
-    # office: Foobar Hall 1.23
-    # whatsapp: +61 466 508 568
+    whatsapp: +61 466 508 568
     email: email@timvo.net
   # demo: https://hacked-jekyll.netlify.app
   # source: https://github.com/piazzai/hacked-jekyll
   profiles:
-    # facebook: https://www.facebook.com/tim.nhut.vo/
-    # twitter: https://twitter.com
     instagram: https://www.instagram.com/tim.nhut.vo/
     linkedin: https://www.linkedin.com/in/timnhutvo/
-    # stackoverflow: https://stackoverflow.com
-    # github: 
   quote:
     - Be grateful for present
     - When the going gets tough, the tough get going
