@@ -81,11 +81,25 @@ layout: default
     <p><span class="list-key">contact</span></p>
     <div class="list">
       {% for i in site.json.contact %}
-      <p><span class="list-subkey">{{ i | slice: 0 }}</span><span class="list-attr">{{ i | slice: 1 }}</span></p>
+      <p>
+        <span class="list-subkey">{{ i | slice: 0 }}</span>
+        {% if i[0] == 'telegram' %}
+          <a href="https://t.me/{{ i | slice: 1 }}" class="list-attr">{{ i | slice: 1 }}</a>
+        {% else %}
+          <span class="list-attr">{{ i | slice: 1 }}</span>
+        {% endif %}
+      </p>
       {% endfor %}
     </div>
     {% else %}
-    <p><span class="key">contact</span><span class="attr">{{ site.json.contact }}</span></p>
+    <p>
+      <span class="key">contact</span>
+      {% if site.json.contact_type == 'telegram' %}
+        <a href="https://t.me/{{ site.json.contact }}" class="attr">{{ site.json.contact }}</a>
+      {% else %}
+        <span class="attr">{{ site.json.contact }}</span>
+      {% endif %}
+    </p>
     {% endif %}
     {% endif %}
   </div>
