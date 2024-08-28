@@ -19,7 +19,7 @@ json:
     - Sydney, NSW 
     - Australia
   contact:
-    whatsapp: +61 466 508 568
+    telegram: tells_define_icon
     email: email@timvo.au
   # demo: https://hacked-jekyll.netlify.app
   # source: https://github.com/piazzai/hacked-jekyll
@@ -27,8 +27,10 @@ json:
     instagram: https://www.instagram.com/tim.nhut.vo/
     linkedin: https://www.linkedin.com/in/timnhutvo/
   quote:
-    - Be grateful for present
-    - When the going gets tough, the tough get going
+    - be grateful for present
+    - ask, and it will be given you. 
+    - seek, and you will find. 
+    - knock, and it will be opened for you.
 
 exclude:
   - LICENSE
