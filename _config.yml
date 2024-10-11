@@ -8,7 +8,7 @@
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: TIM VO
+  name: TIM VO 🇻🇳
   description:
     - Hi there!👋
     - I am a newbie in a BIM-based world - a pretty old guy in 2D world
