@@ -8,12 +8,12 @@
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: "TIM VO <img src='assets/images/vn-flag.png' alt='VN' style='height: 1.5em; position: relative; top: 7px;'><img src='assets/images/au-flag.png' alt='AU' style='height: 1.5em; position: relative; top: 7px;'>"
+  name: "tim vo <img src='assets/images/vn-flag.png' alt='VN' style='height: 1.5em; position: relative; top: 7px;'><img src='assets/images/au-flag.png' alt='AU' style='height: 1.5em; position: relative; top: 7px;'>"
   description:
-    - Hi there!👋
-    - I am a newbie in a BIM-based world - a pretty old guy in 2D world
-    - I love walking, breathing, photographing and sometime &lt;coding&gt;
-    - Here, is another side of me - a geek with IT stuff (ツ)
+    - hi there!👋
+    - i am a newbie in a BIM-based world - a pretty old guy in 2D world
+    - i love walking, breathing, photographing and sometime &lt;coding&gt;
+    - here, is another side of me - a geek with IT stuff (ツ)
   resume: assets/checkout
   address:
     - syd, nsw, au
