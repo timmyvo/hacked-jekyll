@@ -19,7 +19,7 @@ json:
     - syd, nsw, au
     - ///tells.define.icon
   contact:
-    telegram: timvoau
+    # telegram: timvoau
     email: email@timvo.au
   # demo: https://hacked-jekyll.netlify.app
   # source: https://github.com/piazzai/hacked-jekyll
@@ -27,8 +27,8 @@ json:
     instagram: https://www.instagram.com/tim.nhut.vo/
     linkedin: https://www.linkedin.com/in/timnhutvo/
   quote:
-    - be grateful for present
     - cứ đi rồi sẽ đến, cứ gõ rồi cửa sẽ mở 
+    - be grateful for present
     - the brighter you shine, the more shadows you cast
 
 exclude:
