@@ -8,7 +8,7 @@
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: "tim vo <img src='assets/images/vn-flag.png' alt='VN' style='height: 1.5em;position: relative; top: 5px;'><img src='assets/images/au-flag.png' alt='AU' style='height: 1.5em;position: relative; top: 5px;'>"
+  name: "tim vo <img src='assets/images/vn-flag.png' alt='VN' style='height: 1.5em;position: relative; top: 5px;'><img src='assets/images/au-flag.png' alt='AU' style='height: 1.5em;position: relative; top: 5px;'> - born Vietnamese live Australian"
   description:
     - hi there!👋
     - I am a newbie in a BIM-based world - a pretty old guy in 2D world
@@ -30,7 +30,7 @@ json:
     - cứ đi rồi sẽ đến, cứ gõ rồi cửa sẽ mở 
     - be grateful for present
     - the brighter you shine, the more shadows you cast
-    - success is not a one size fits all
+    - success is not a one size that fits all
 
 exclude:
   - LICENSE
