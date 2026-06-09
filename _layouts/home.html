@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+<main class="json">
+  <div class="block {% if site.json.name %}responsive-block{% endif %}">
+    {% if site.json.name %}
+    <p>
+      <span class="key">name</span>
+      <span class="attr">
+        {{ site.json.name | escape }}
+        {% if site.json.name_suffix %}
+        {{ site.json.name_suffix | escape }}
+        {% endif %}
+      </span>
+    </p>
+    {% else %}
+    <p><span class="key">name</span><span class="attr">{{ site.title | escape }}</span></p>
+    {% endif %}
+    {% if site.json.description %}
+    {% if site.json.description.first %}
+    <p>
+      <span class="key">description</span>
+      <span class="attr">
+        <span class="scramble-text" data-texts="{{ site.json.description | jsonify | escape }}">{{ site.json.description | first | escape }}</span><span class="scramble-cursor" aria-hidden="true"></span>
+      </span>
+    </p>
+    {% else %}
+    <p><span class="key">description</span><span class="attr">{{ site.json.description | escape }}</span></p>
+    {% endif %}
+    {% else %}
+    <p><span class="key">description</span><span class="attr">{{ site.description | escape }}</span></p>
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.resume %}
+    {% if site.json.resume.first %}
+    <p><span class="array-key">resume</span></p>
+    <div class="array">
+      {% for item in site.json.resume %}
+        {% if item contains '/' or item contains '.' %}
+          {% assign resume_url = item %}
+          {% assign resume_text = item | split: "/" | last %}
+        {% else %}
+          {% assign cleaned_item = item | downcase | replace: ' ', '' %}
+          {% assign resume_url = 'assets/' | append: cleaned_item %}
+          {% assign resume_text = item %}
+        {% endif %}
+        <p class="array-attr"><a href="{{ resume_url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ resume_text | escape }}</a></p>
+      {% endfor %}
+    </div>
+    {% else %}
+    {% assign resume = site.json.resume | split: "/" | last %}
+    <p><span class="key">resume</span><span class="attr"><a href="{{ site.json.resume | relative_url }}" target="_blank" rel="noopener noreferrer">{{ resume | escape }}</a></span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+    
+  <div class="block">
+    {% if site.json.address %}
+    {% if site.json.address.first %}
+    <p><span class="array-key">address</span></p>
+    <div class="array">
+      {% for i in site.json.address %}
+      <p class="array-attr">{{ i | escape }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">address</span><span class="attr">{{ site.json.address | escape }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.contact %}
+    {% if site.json.contact.first %}
+    <p><span class="array-key">contact</span></p>
+    <div class="array">
+      {% for i in site.json.contact %}
+      <p class="array-attr">{{ i | escape }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>
+      <span class="key">contact</span>
+      {% if site.json.contact_type == 'telegram' %}
+        <a href="https://t.me/{{ site.json.contact }}" class="attr">{{ site.json.contact | escape }}</a>
+      {% else %}
+        <span class="attr">{{ site.json.contact | escape }}</span>
+      {% endif %}
+    </p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.demo %}
+    {% assign demo = site.json.demo | split: "//" | slice: 1 %}
+    <p><span class="key">demo</span><span class="attr"><a href="{{ site.json.demo }}" target="_blank" rel="noopener noreferrer">{{ demo | escape }}</a></span></p>
+    {% endif %}
+    {% if site.json.source %}
+    {% assign source = site.json.source | split: "github.com/" | slice: 1 %}
+    <p><span class="key">source</span><span class="attr"><a href="{{ site.json.source }}" target="_blank" rel="noopener noreferrer">{{ source | escape }}</a></span></p>
+    {% endif %}
+  </div>
+  <div class="block">
+    {% if site.json.profiles %}
+    {% if site.json.profiles.first %}
+    <p><span class="array-key">profiles</span></p>
+    <div class="array">
+      {% for item in site.json.profiles %}
+        {% if item[1] %}
+          <p class="array-attr"><a href="{{ item[1] }}" target="_blank" rel="noopener noreferrer">{{ item[0] | escape }}</a></p>
+        {% else %}
+          {% for profile in item %}
+            <p class="array-attr"><a href="{{ profile[1] }}" target="_blank" rel="noopener noreferrer">{{ profile[0] | escape }}</a></p>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">profiles</span><span class="attr"><a href="{{ site.json.profiles }}" target="_blank" rel="noopener noreferrer">{{ site.json.profiles | escape }}</a></span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <div class="block {% if site.json.quote %}responsive-block{% endif %}">
+    {% if site.json.quote %}
+    {% if site.json.quote.first %}
+    <p><span class="array-key">quote</span></p>
+    <div class="array">
+      {% for i in site.json.quote %}
+      <p class="array-attr">{{ i | escape }}</p>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p><span class="key">quote</span><span class="attr">{{ site.json.quote | escape }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+  <p> </p>
+    
+</main>

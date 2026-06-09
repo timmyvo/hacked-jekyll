@@ -1,0 +1,50 @@
+# this is only for search engines, it does not appear in the home
+# as long as the json variables name and description are provided
+title: TIM VO
+description: Personal JSON-style homepage for Tim Vo.
+baseurl: ""
+url: https://timvo.au
+
+# this information is shown on the homepage, all fields are optional and
+# can be declared either as a single string or as a string array/hash
+json:
+  name: tim vo
+  name_suffix: "- born Vietnamese live Australian love American"
+  description:
+    - hi there!👋
+    - I am a newbie in a BIM-based world - a pretty old guy in 2D world
+    - I am into walking, breathing, photographing and sometime <coding>
+    - here, is another side of me - a geek with IT stuff
+  resume:
+    - "check out"
+  address:
+    - sgn, vi
+    - syd, nsw, au
+  contact:
+    - "email: email@timvo.au"
+  # demo: https://hacked-jekyll.netlify.app
+  # source: https://github.com/piazzai/hacked-jekyll
+  profiles:
+    instagram: https://www.instagram.com/tim.nhut.vo/
+    linkedin: https://www.linkedin.com/in/timnhutvo/
+  quote:
+    - be grateful for present
+    - the brighter you shine, the more shadows you cast
+    - success is not a one-size-fits-all concept
+    - cashflow makes you rich, equity makes you wealth
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
