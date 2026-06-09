@@ -35,7 +35,8 @@
     function run() {
       var finalText = phrases[phraseIndex];
       var progress = 0;
-      target.classList.remove("is-glitch");
+      target.classList.remove("glitch");
+      target.removeAttribute("data-text");
       target.classList.add("is-scrambling");
 
       function tick() {
@@ -57,10 +58,8 @@
         frameId = null;
         target.textContent = finalText;
         target.classList.remove("is-scrambling");
-        target.classList.add("is-glitch");
-        window.setTimeout(function () {
-          target.classList.remove("is-glitch");
-        }, 620);
+        target.setAttribute("data-text", finalText);
+        target.classList.add("glitch");
         phraseIndex = (phraseIndex + 1) % phrases.length;
         restartId = window.setTimeout(run, 2200);
       }
