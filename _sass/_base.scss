@@ -61,15 +61,20 @@
 
 
 /* Default styles for both dark and light modes */
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "hack", monospace;
   font-size: 16px;
   font-weight: 400;
-  
+
   margin: 0; /* Remove default body margin */
-  min-height: 100%; /* Ensure the body takes up at least the full viewport height */
-  display: flex; /* Enable flex layout for vertical centering */
-  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh;
+  min-height: 100dvh; /* Fill the viewport, then grow only with real content */
+  overflow-x: hidden;
 }
 
 main {
@@ -78,10 +83,10 @@ main {
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  flex: 1; /* Allow main to grow and take up remaining space */
   width: 95%;
-  margin: auto; /* Center main horizontally */
-  margin-top: 3%; /* Set margin from the top to 20% of viewport height */
+  margin: 0 auto; /* Center main without adding unused space below it */
+  padding-top: clamp(1rem, 3vh, 2rem);
+  box-sizing: border-box;
 }
 
 /* Styles for dark mode */
