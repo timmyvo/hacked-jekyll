@@ -22,7 +22,7 @@ layout: default
     <p>
       <span class="key">description</span>
       <span class="attr">
-        <span class="scramble-text" data-texts="{{ site.json.description | jsonify | escape }}">{{ site.json.description | first | escape }}</span><span class="scramble-cursor" aria-hidden="true"></span>
+        <span class="scramble-text" data-texts="{{ site.json.description | jsonify | escape }}"><span class="scramble-value">{{ site.json.description | first | escape }}</span><span class="scramble-cursor" aria-hidden="true"></span></span>
       </span>
     </p>
     {% else %}

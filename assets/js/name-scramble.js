@@ -6,6 +6,7 @@
   if (!targets.length) return;
 
   targets.forEach(function (target) {
+    var value = target.querySelector(".scramble-value") || target;
     var phrases = [];
 
     try {
@@ -14,13 +15,13 @@
       phrases = [];
     }
 
-    if (!phrases.length) phrases = [target.dataset.text || target.textContent || ""];
+    if (!phrases.length) phrases = [target.dataset.text || value.textContent || ""];
     phrases = phrases.map(function (phrase) {
       return String(phrase);
     });
 
     if (prefersReducedMotion) {
-      target.textContent = phrases[0];
+      value.textContent = phrases[0];
       return;
     }
 
@@ -42,7 +43,7 @@
       function tick() {
         var resolved = Math.floor(progress);
 
-        target.textContent = Array.from(finalText, function (char, index) {
+        value.textContent = Array.from(finalText, function (char, index) {
           if (char === " ") return " ";
           return index < resolved ? char : randomChar();
         }).join("");
@@ -56,7 +57,7 @@
 
         cancelAnimationFrame(frameId);
         frameId = null;
-        target.textContent = finalText;
+        value.textContent = finalText;
         target.classList.remove("is-scrambling");
         target.setAttribute("data-text", finalText);
         target.classList.add("glitch");

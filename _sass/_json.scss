@@ -35,7 +35,8 @@
 .scramble-text {
   display: inline-block;
   position: relative;
-  min-width: min(100%, 24ch);
+  max-width: 100%;
+  vertical-align: top;
   --scramble-flash-primary: var(--oc-cyan-4);
   --scramble-flash-secondary: var(--oc-green-4);
   --scramble-shadow-red: var(--oc-red-7);
